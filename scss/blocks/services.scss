@@ -1,0 +1,62 @@
+.services {
+  background: $services_bg;
+  padding-top: 165px;
+  padding-bottom: 125px;
+  text-align: center;
+
+  .services__title {
+    padding-bottom: 110px;
+
+    .about__title {
+      padding-bottom: 30px;
+    }
+  }
+
+  .our_card {
+    background: $white;
+    padding: 50px 45px 40px;
+    margin-bottom: 30px;
+    height: 438px;
+
+    &:hover {
+      background: $color_btn;
+      transition-duration: 300ms;
+      color: $white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .35);
+
+      p {
+        color: $white;
+        transition-duration: 300ms;
+      }
+    }
+
+    .icon {
+      font-size: 60px;
+    }
+
+    .services__btn {
+      @include btn () {
+        border: 1px solid $black;
+        width: 150px;
+        height: 55px;
+        background: transparent;
+        color: $black;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: underline;
+          color: $white;
+          border: 1px solid $white;
+        }
+      }
+    }
+
+    .about__txt {
+      padding-bottom: 35px;
+    }
+  }
+}

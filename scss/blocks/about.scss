@@ -1,33 +1,36 @@
 .about {
   text-align: center;
-  padding: 125px 0;
 
-  .col-xl-3 {
+  .about__block {
+    padding: 115px 0;
+  }
+
+  .about__element {
     padding-top: 5px;
+    height: 340px;
 
     &:hover {
       background: #d6b3b3;
     }
   }
+}
 
-  .about__title {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1.1px;
-  }
+.about_h3 {
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 1.1px;
+  font-weight: 600;
+  margin: 30px auto 20px;
+}
 
-  .about__txt {
-    font-size: 15px;
-    padding-bottom: 110px;
-    line-height: 22px;
-    letter-spacing: 1.1px;
-  }
+.about__title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
 
-  .about_h3 {
-    font-size: 20px;
-    line-height: 22px;
-    letter-spacing: 1.1px;
-    font-weight: 700;
-    margin: 30px auto 20px;
-  }
+.about__txt {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1.1px;
 }
