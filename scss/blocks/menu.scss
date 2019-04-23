@@ -10,15 +10,65 @@
       color: $gray-black;
       font-size: 20px;
       font-weight: 600;
+      line-height: 22px;
+      //letter-spacing: 1.1px;
 
       &:hover {
         text-decoration: none;
         color: lighten($gray-black, 50%);
-        transition: 300ms;
         transition-duration: 300ms;
       }
     }
   }
 }
+
+.header {
+  .container {
+    background-image: url("../img/header.png");
+    padding: 180px 0;
+    text-align: center;
+    color: $white;
+    background-size: cover;
+    background-position: 0 100%;
+
+    p {
+      color: $white;
+    }
+
+    .header__title {
+      font-size: 60px;
+      margin-bottom: 30px;
+    }
+
+    .header_txt {
+      font-size: 20px;
+      margin-bottom: 100px;
+    }
+
+    .button {
+      @include btn;
+      width: 220px;
+      height: 70px;
+      font-size: 20px;
+      line-height: 22px;
+
+
+      &:hover {
+        background: darken($color_btn, 10%);
+      }
+    }
+
+    .button_empty {
+      background: transparent;
+      border: 2px solid $white;
+    }
+
+    .button_full {
+      background: $color_btn;
+      border: 2px solid $color_btn;
+    }
+  }
+}
+
 
 
